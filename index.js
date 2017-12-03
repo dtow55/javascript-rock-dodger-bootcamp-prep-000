@@ -125,7 +125,7 @@ function endGame() {
   //console.log(ROCKS.length)
   //console.log(document.querySelectorAll('.rock').length)
   for (let i = 0; i < document.querySelectorAll('.rock').length; i++) {
-    GAME.removeChild(GAME.querySelectorAll('.rock'))
+    GAME.removeChild(GAME.querySelectorAll('.rock')[0])
   }
   for (let i = 0; i < ROCKS.length; i++) {
     ROCKS.pop()
