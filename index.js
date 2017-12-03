@@ -120,7 +120,6 @@ function createRock(x) {
  * Finally, alert "YOU LOSE!" to the player.
  */
 function endGame() {
-  window.cancelAnimationFrame()
   clearInterval(gameInterval)
   //console.log(ROCKS.length)
   //console.log(document.querySelectorAll('.rock').length)
