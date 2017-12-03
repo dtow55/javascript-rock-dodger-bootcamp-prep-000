@@ -126,12 +126,12 @@ function endGame() {
   //for (let i = 0; i < document.querySelectorAll('.rock').length; i++) {
     //GAME.removeChild(GAME.querySelectorAll('.rock')[0])
   //}
-  for (let i = 0; i < ROCKS.length; i++) {
+  for (let i = ROCKS.length - 1; i >= 0; i--) {
     ROCKS.pop()
   }
-  while (GAME.hasChildNodes()) {
-    GAME.removeChild(GAME.lastChild)
-  }
+  //while (GAME.hasChildNodes()) {
+    //GAME.removeChild(GAME.lastChild)
+  //}
   window.removeEventListener('keydown', moveDodger)
   alert('YOU LOSE!')
 }
