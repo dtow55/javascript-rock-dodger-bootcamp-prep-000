@@ -171,9 +171,11 @@ function moveDodgerRight() {
    */
   const originalLeft = positionToInteger(DODGER.style.left)
   function step() {
-    DODGER.style.left = `${positionToInteger(DODGER.style.left) + 1}px`
-    if(positionToInteger(DODGER.style.left) < (originalLeft + 9)) {
-      window.requestAnimationFrame(step)
+    if (positionToInteger(DODGER.style.left) > 0) {
+      DODGER.style.left = `${positionToInteger(DODGER.style.left) + 1}px`
+      if(positionToInteger(DODGER.style.left) < (originalLeft + 9)) {
+        window.requestAnimationFrame(step)
+      }
     }
   }
   window.requestAnimationFrame(step)
