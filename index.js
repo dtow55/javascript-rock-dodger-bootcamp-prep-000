@@ -120,13 +120,16 @@ function createRock(x) {
  * Finally, alert "YOU LOSE!" to the player.
  */
 function endGame() {
-  window.clearAnimationFrame()
+
   clearInterval(gameInterval)
   //console.log(ROCKS.length)
   //console.log(document.querySelectorAll('.rock').length)
-  //for (let i = 0; i < document.querySelectorAll('.rock').length; i++) {
-    //GAME.removeChild(GAME.lastChild)
-  //}
+  for (let i = 0; i < document.querySelectorAll('.rock').length; i++) {
+    GAME.removeChild(GAME.querySelectorAll('.rock'))
+  }
+  for (let i = 0; i < ROCKS.length; i++) {
+    ROCKS.pop()
+  }
   //while (GAME.hasChildNodes()) {
     //GAME.removeChild(GAME.lastChild)
   //}
