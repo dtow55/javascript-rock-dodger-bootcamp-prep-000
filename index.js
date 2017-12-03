@@ -126,6 +126,9 @@ function endGame() {
   //for (let i = 0; i < document.querySelectorAll('.rock').length; i++) {
     //GAME.removeChild(document.querySelectorAll('.rock')[i])
   //}
+  while (GAME.hasChildNodes()) {
+    GAME.removeChild(GAME.lastChild)
+  }
   window.removeEventListener('keydown', moveDodger)
   alert('YOU LOSE!')
 }
