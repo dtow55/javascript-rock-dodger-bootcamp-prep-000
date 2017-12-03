@@ -124,8 +124,8 @@ function endGame() {
   //console.log(ROCKS.length)
   //console.log(document.querySelectorAll('.rock').length)
   //for (let i = 0; i < document.querySelectorAll('.rock').length; i++) {
-    GAME.removeChild(GAME.lastChild)
-  }
+    //GAME.removeChild(GAME.lastChild)
+  //}
   //while (GAME.hasChildNodes()) {
     //GAME.removeChild(GAME.lastChild)
   //}
