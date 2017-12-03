@@ -123,11 +123,11 @@ function endGame() {
   clearInterval(gameInterval)
   //console.log(ROCKS.length)
   //console.log(document.querySelectorAll('.rock').length)
-  //for (let i = 0; i < document.querySelectorAll('.rock').length; i++) {
-    //GAME.removeChild(GAME.querySelectorAll('.rock')[0])
-  //}
+  for (let i = 0; i < document.querySelectorAll('.rock').length; i++) {
+    GAME.removeChild(GAME.querySelector('.rock'))
+  }
   for (let i = ROCKS.length - 1; i >= 0; i--) {
-    ROCKS[i].remove()
+    //ROCKS[i].remove()
     ROCKS.pop()
   }
   //while (GAME.hasChildNodes()) {
