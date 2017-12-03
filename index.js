@@ -127,6 +127,7 @@ function endGame() {
     //GAME.removeChild(GAME.querySelectorAll('.rock')[0])
   //}
   for (let i = ROCKS.length - 1; i >= 0; i--) {
+    ROCKS[i].remove()
     ROCKS.pop()
   }
   //while (GAME.hasChildNodes()) {
